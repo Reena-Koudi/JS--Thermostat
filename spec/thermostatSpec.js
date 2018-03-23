@@ -30,18 +30,6 @@ var thermostat;
       expect(thermostat.isPowerSavingModeOn()).toBe(true);
     });
 
-    it('set the power saving mode off', function(){
-      thermostat.powerSavingModeOff();
-      expect(thermostat.isPowerSavingModeOn()).toBe(false);
-    });
-
-    it('switch power saving mode back on', function(){
-      thermostat.powerSavingModeOff();
-      expect(thermostat.isPowerSavingModeOn()).toBe(false);
-      thermostat.powerSavingModeOn();
-      expect(thermostat.isPowerSavingModeOn()).toBe(true);
-    });
-
     it('When PSM is on set maximum temperature to 25', function() {
       for(var i = 0; i < 5; i++) {
         thermostat.up();
