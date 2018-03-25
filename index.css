@@ -9,3 +9,11 @@
 .high-usage {
   color: red;
 }
+
+body {
+    background-color: lightblue;
+}
+
+.center {
+  text-align: center;
+}
